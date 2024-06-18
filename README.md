@@ -50,4 +50,14 @@ model.fc.weight.data.normal_(mean, std)
 model.fc.bias.data.zero_()
 ```
 
+## Citing
+If you find this code useful in your research, please consider citing:
+
+    @misc{han2024plantleaf,
+    title={Agricultural Vision Foundation Model through Self-Supervised Learning on Plant Leaf Images},
+    author={Yunseok Han, Woosang Jeon, Sanghyeok Choi, Kyuseok Yang, Taehyeong Kim},
+    howpublished={Presented at CIGR Conference},
+    year={2024},
+    note={Oral Presentation}
+    }
 
