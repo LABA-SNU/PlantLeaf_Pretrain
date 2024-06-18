@@ -11,6 +11,7 @@ To bridge this gap, this study introduces **a deep learning-based vision foundat
   <img src="./imgs/PlantLeaf_intro.png" width="600"/>
 </p>
 
+
 ## Results ( with ResNet-50 )
 | Method                       |          PVD          |     Pepper_chilli     |         Tomato        |        Lettuce        |
 |------------------------------|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
@@ -22,7 +23,8 @@ To bridge this gap, this study introduces **a deep learning-based vision foundat
 | ImageNet Pretrained          |   0.833 $\pm$ 0.008   |   0.729 $\pm$ 0.038   |   0.810 $\pm$ 0.018   |   0.356 $\pm$ 0.070   |
 | Random init                  |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |
 
-## Usage with Weight Initialization
+
+## Example Usage with Weight Initialization
 ```python
 import torch
 import torch.nn as nn
@@ -49,6 +51,40 @@ model.fc = nn.Linear(in_features, cls_num)
 model.fc.weight.data.normal_(mean, std)
 model.fc.bias.data.zero_()
 ```
+
+## Models
+<table class="tg"><thead>
+  <tr>
+    <th class="tg-9wq8">SSL Method</th>
+    <th class="tg-9wq8">Model</th>
+    <th class="tg-9wq8">Available</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td class="tg-9wq8" rowspan="3">BYOL</td>
+    <td class="tg-9wq8">ResNet-18</td>
+    <td class="tg-9wq8">✅</td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">ResNet-50</td>
+    <td class="tg-nrix">✅</td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">ViTs</td>
+    <td class="tg-nrix">Coming Soon</td>
+  </tr>
+  <tr>
+    <td class="tg-9wq8" rowspan="2">DINO</td>
+    <td class="tg-9wq8">CNNs</td>
+    <td class="tg-9wq8">Coming Soon</td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">ViTs</td>
+    <td class="tg-nrix">Coming Soon</td>
+  </tr>
+</tbody>
+</table>
+
 
 ## Citing
 If you find this code useful in your research, please consider citing:
