@@ -16,10 +16,10 @@ To bridge this gap, this study introduces **a deep learning-based vision foundat
 | Method                       |          PVD          |     Pepper_chilli     |         Tomato        |        Lettuce        |
 |------------------------------|:---------------------:|:---------------------:|:---------------------:|:---------------------:|
 | Linear Evaluation :          |                       |                       |                       |                       |
-| PlantLeaf Pretrained (Ours ) | **0.922 $\pm$ 0.001** |   0.826 $\pm$ 0.005   | **0.912 $\pm$ 0.002** | **0.625 $\pm$ 0.001** |
+| PlantLeaf Pretrained (Ours)  | **0.922 $\pm$ 0.001** |   0.826 $\pm$ 0.005   | **0.912 $\pm$ 0.002** | **0.625 $\pm$ 0.001** |
 | ImageNet Pretrained          |   0.901 $\pm$ 0.002   | **0.854 $\pm$ 0.014** |   0.879 $\pm$ 0.011   |   0.521 $\pm$ 0.080   |
 | Fine-tuned :                 |                       |                       |                       |                       |
-| PlantLeaf Pretrained (Ours ) | **0.961 $\pm$ 0.003** | **0.939 $\pm$ 0.024** | **0.954 $\pm$ 0.013** | **0.848 $\pm$ 0.013** |
+| PlantLeaf Pretrained (Ours)  | **0.961 $\pm$ 0.003** | **0.939 $\pm$ 0.024** | **0.954 $\pm$ 0.013** | **0.848 $\pm$ 0.013** |
 | ImageNet Pretrained          |   0.833 $\pm$ 0.008   |   0.729 $\pm$ 0.038   |   0.810 $\pm$ 0.018   |   0.356 $\pm$ 0.070   |
 | Random init                  |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |   0.833 $\pm$ 0.008   |
 
